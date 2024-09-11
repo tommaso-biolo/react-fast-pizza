@@ -1,5 +1,5 @@
-import LinkButton from '../../ui/LinkButton';
-import Button from '../../ui/Button';
+import LinkButton from '../../UI/LinkButton';
+import Button from '../../UI/Button';
 import CartItem from './CartItem';
 import EmptyCart from './EmptyCart';
 import { useDispatch, useSelector } from 'react-redux';
@@ -11,7 +11,7 @@ function Cart() {
 
   const cart = useSelector(getCart);
 
- if(!cart.length) return <EmptyCart/>
+  if (!cart.length) return <EmptyCart />;
 
   return (
     <div className="px-4 py-3">
